@@ -1,6 +1,6 @@
 # Deploy de um Azure Web App Service via arquivos e pipeline
 
-A seguir, contém instruções para que seja feito deploy de um Web App Service, utilizando o .ZIP dos arquivos gerados e a pipeline do Azure DevOps.
+A seguir, contém instruções para que seja feito deploy de um Web App Service, utilizando o .ZIP dos arquivos gerados, imagem de container e a pipeline do Azure DevOps.
 
 ## 1 - Adicionando permissões para o Azure DevOps acessar o portal Azure
 #### Criando o registro de aplicativo
