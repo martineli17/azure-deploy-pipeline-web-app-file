@@ -22,7 +22,11 @@ No contexto de realizar o deploy de um Web App utilizando o Azure DevOps Pipelin
 
 ![subscription_access](https://github.com/martineli17/azure-deploy-pipeline-web-app-file/assets/50757499/f7b7a824-8104-4f6d-be17-581b24282657)
 
-## 2 - Adicionando as Conexões de Serviços no Azure
+## 2 - Criando Web App
+Observação: para criar um Web App para container, basta mudar a opção `Publish` para `Container`
+![create_app_service](https://github.com/martineli17/azure-deploy-pipeline-web-app-file/assets/50757499/a50940d1-32c5-407c-acf1-d2d4acc7556a)
+
+## 3 - Adicionando as Conexões de Serviços no Azure
 
 O Azure Devops contém uma sessão que é específica para definir as conexões de serviços que serão utilizadas durante o processo de execução das pipelines para permitir acesso a alguns recursos do portal e também acesso a modificação do Web App selecionado. Em alguns casos, as conexões relacionadas a Azure podem ser identificadas automaticamente através do e-mail utilizado no Azure DevOps. No entanto, para este exemplo, foi configurado manualmente uma conexão com o objetivo de simular o acesso a uma conta Azure que não esteja vinculada diretamente ao e-mail do DevOps.
 ![new_service_connections](https://github.com/martineli17/azure-deploy-pipeline-web-app-file/assets/50757499/53b18060-539f-4137-b244-5b8dee00419c)
@@ -35,7 +39,7 @@ O Azure Devops contém uma sessão que é específica para definir as conexões 
 
  - Para o campo `Tenant ID`, será o ID do seu diretório. Esse ID pode ser obtido pesquisando por `Tenant properties` na barra de pesquisa.
 
-## 3 - Usando a conexão de serviço criada no Azure DevOps Pipeline
+## 4 - Usando a conexão de serviço criada no Azure DevOps Pipeline
 Finalizando todos os processos acima, a conexão de serviço ficará disponível para ser utilizada nas pipelines do Azure DevOps.
 No exemplo deste repositório, a conexão foi utilizada para realizar o deploy de um WebApp via código e um WebApp via container.
 Para o WebApp via container, foi adicionada uma nova conexão de serviço referente ao Docker Hub.
